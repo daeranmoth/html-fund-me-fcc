@@ -17,7 +17,7 @@ async function connect() {
     } catch (error) {
       console.log(error)
     }
-    connectButton.innerHTML = "Connected"
+    connectButton.innerHTML = "Connected !"
     const accounts = await ethereum.request({ method: "eth_accounts" })
     console.log(accounts)
   } else {
